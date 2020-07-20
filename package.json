@@ -1,5 +1,5 @@
 {
-  "name": "preact-css-transition-group",
+  "name": "preact8-css-transition-group",
   "amdName": "PreactCSSTransitionGroup",
   "version": "1.3.0",
   "description": "Apply CSS transitions when adding or removing Preact components/elements.",
@@ -24,7 +24,7 @@
     "preact-css-transition-group",
     "css-transition-group"
   ],
-  "homepage": "http://github.com/developit/preact-css-transition-group",
+  "homepage": "http://github.com/goto-bus-stop/preact8-css-transition-group",
   "authors": [
     "Jason Miller <jason@developit.ca>",
     "yiminghe (https://github.com/yiminghe)",
@@ -32,10 +32,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/react-component/css-transition-group.git"
+    "url": "git+ssh://git@github.com/goto-bus-stop/preact8-css-transition-group.git"
   },
   "bugs": {
-    "url": "http://github.com/developit/preact-css-transition-group/issues"
+    "url": "http://github.com/goto-bus-stop/preact8-css-transition-group/issues"
   },
   "license": "MIT",
   "devDependencies": {
@@ -80,6 +80,6 @@
     "webpack": "^1.12.14"
   },
   "peerDependencies": {
-    "preact": "*"
+    "preact": "^8.0.0"
   }
 }
