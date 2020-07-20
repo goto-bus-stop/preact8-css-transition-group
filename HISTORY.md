@@ -1,5 +1,9 @@
 # History
 
+## 2.1.0
+
+Try straight up depending on preact@^8.0.0.
+
 ## 2.0.0
 
 Forked again from [preact-css-transition-group](https://github.com/developit/preact-css-transition-group) v1.3.0
