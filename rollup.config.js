@@ -12,8 +12,7 @@ export default {
 	entry: 'src/index.js',
 	dest: pkg.main,
 	sourceMap: path.resolve(pkg.main),
-	moduleName: pkg.amdName,
-	format: 'umd',
+	format: 'cjs',
 	external,
 	plugins: [
 		babel({
