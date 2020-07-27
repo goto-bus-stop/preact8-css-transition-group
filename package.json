@@ -1,41 +1,19 @@
 {
   "name": "preact8-css-transition-group",
-  "amdName": "PreactCSSTransitionGroup",
-  "version": "2.1.0",
   "description": "Apply CSS transitions when adding or removing Preact components/elements.",
-  "main": "dist/preact-css-transition-group.js",
-  "minified:main": "dist/preact-css-transition-group.min.js",
-  "jsnext:main": "src/index.js",
-  "scripts": {
-    "build": "npm-run-all transpile",
-    "transpile": "rollup -c rollup.config.js",
-    "test": "npm-run-all lint test:karma",
-    "lint": "eslint {src,tests}",
-    "test:karma": "karma start tests/karma.conf.js --single-run",
-    "prepublish": "npm-run-all build test",
-    "release": "npm run -s build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish",
-    "peer:preact": "mkdir -p tests/preact-versions && sh -c 'curl https://registry.npmjs.org/preact/-/preact-$0.tgz | tar xz -O package/dist/preact.min.js > tests/preact-versions/$0.js'"
-  },
-  "keywords": [
-    "preact",
-    "preact-component",
-    "preact-css-transition-group",
-    "css-transition-group"
-  ],
-  "homepage": "http://github.com/goto-bus-stop/preact8-css-transition-group",
+  "version": "2.1.1",
+  "amdName": "PreactCSSTransitionGroup",
   "authors": [
     "Jason Miller <jason@developit.ca>",
     "yiminghe (https://github.com/yiminghe)",
     "React Authors (https://facebook.github.io/react)"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/goto-bus-stop/preact8-css-transition-group.git"
-  },
   "bugs": {
     "url": "http://github.com/goto-bus-stop/preact8-css-transition-group/issues"
   },
-  "license": "MIT",
+  "dependencies": {
+    "preact": "^8.0.0"
+  },
   "devDependencies": {
     "babel-core": "^6.6.4",
     "babel-eslint": "^6.1.2",
@@ -78,8 +56,29 @@
     "uglify-js": "^2.6.2",
     "webpack": "^1.12.14"
   },
-  "dependencies": {
-    "preact": "^8.0.0"
+  "homepage": "http://github.com/goto-bus-stop/preact8-css-transition-group",
+  "jsnext:main": "src/index.js",
+  "keywords": [
+    "css-transition-group",
+    "preact",
+    "preact-component",
+    "preact-css-transition-group"
+  ],
+  "license": "MIT",
+  "main": "dist/preact-css-transition-group.js",
+  "minified:main": "dist/preact-css-transition-group.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/goto-bus-stop/preact8-css-transition-group.git"
   },
-  "dependencies": {}
+  "scripts": {
+    "build": "npm-run-all transpile",
+    "lint": "eslint {src,tests}",
+    "peer:preact": "mkdir -p tests/preact-versions && sh -c 'curl https://registry.npmjs.org/preact/-/preact-$0.tgz | tar xz -O package/dist/preact.min.js > tests/preact-versions/$0.js'",
+    "prepublish": "npm-run-all build test",
+    "release": "npm run -s build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish",
+    "test": "npm-run-all lint test:karma",
+    "test:karma": "karma start tests/karma.conf.js --single-run",
+    "transpile": "rollup -c rollup.config.js"
+  }
 }

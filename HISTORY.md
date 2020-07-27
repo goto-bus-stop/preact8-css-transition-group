@@ -1,5 +1,6 @@
 # History
 
+## 2.1.1
 ## 2.1.0
 
 Try straight up depending on preact@^8.0.0.
